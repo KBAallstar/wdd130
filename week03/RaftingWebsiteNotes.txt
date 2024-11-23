@@ -1,0 +1,42 @@
+Whitewater River Rafting Website Notes
+Tyler Hatton, BYU WDD130
+
+Logo Image: https://byui-cse.github.io/wdd130-ww-course/resources/images/logos/dryoarlogo3.png
+
+COLOR PALETTE https://coolors.co/37541c-324362-b4e18b-96c1f0
+- primary-color: #37541C
+- Secondary-color: #324362
+- accent1-color: #B4E18B
+- accent2-color: #96C1F0
+
+TYPOGRAPHY
+- heading-font: Averia Libre 400, 700
+- text-font: Crimson Text 400 and 600 (semibold)
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@400;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+
+.averia-libre-regular {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.averia-libre-bold {
+  font-family: "Averia Libre", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
