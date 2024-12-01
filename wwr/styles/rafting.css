@@ -22,11 +22,13 @@
     font-style: normal;
 }
 
-/* COLOR PALETTE https://coolors.co/37541c-324362-b4e18b-96c1f0
-- primary-color: #37541C
-- Secondary-color: #324362
-- accent1-color: #B4E18B
-- accent2-color: #96C1F0 */
+/*
+COLOR PALETTE https://coolors.co/37541c-324362-b4e18b-96c1f0
+- primary-color: #37541C forest green
+- Secondary-color: #324362 blue-grey
+- accent1-color: #B4E18B pale green
+- accent2-color: #96C1F0 pale light blue
+*/
 
 /* CSS ELEMENTS */
 
@@ -35,14 +37,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/*h1 {
-    font-size: 2.5rem;
-    font-family: "Averia Libre", system-ui;
-    font-weight: 700;
-    color: #37541C;
-    margin: 1rem 0;
-}*/
 
 h2 {
     font-size: 2rem;
@@ -65,63 +59,220 @@ a {
     color: #96C1F0;
 }
 
-.hero {
-    margin: 10px auto;
-    position: relative;
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 0 1rem;
+    max-width: 700px;
 }
 
-.hero img {
+header img {
+    margin: 0;
+    width: 100px;
+	height: auto;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    min-height: 50px;
+    max-height: 50px;
+    align-items: center;
+}
+
+.header-navbar li{
+    flex: 1 1 100%;
+}
+
+.header-navbar a {
     display: block;
-    width: 100%;
-    height: auto;
+    background-color: #324362;
+    color: white;
+    text-decoration: none;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.herotitle {
-    position: absolute;
-    top: 450px;
-    left: 0px;
-    font-size: 3rem;
+.header-navbar a:hover {
+	color: darkkhaki;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.hero-image {
+    position: relative;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    max-height: 550px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero-title {
+    grid-row: 1;
+    font-size: 3vw;
     font-family: "Averia Libre", system-ui;
     font-weight: 700;
     color: white;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 10px;
+    width: 95%;
+    box-sizing: border-box;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.hero-article {
+    grid-row: 2;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     width: 95%;
     box-sizing: border-box;
     text-align: center;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 10px;
+    align-self: start;
+    justify-self: center;
 }
 
-.heroarticle {
-    position: absolute;
-    top: 700px;
-    left: 150px;
-    text-align: center;
-    color: white;
-    background-color: #32436280;
-    padding: 10px;
-    width: 70%;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.heroarticle img {
-    width: 300px;
+.hero-article img {
+    width: 100%;
     height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    float: right;
-    margin: 0 0 1rem 1rem;
+    max-width: 300px;
+    object-fit: cover;
+    align-self: center;
 }
 
-.heroarticle p {
-    font-size: 1.5rem;
+.hero-article p {
+    padding: 10px;
+    font-size: 2vw;
     font-family: "Crimson Text", serif;
     font-weight: 400;
     color: #B4E18B;
-    margin: 1rem 0;
+    align-self: center;
+}
+
+.history-strip {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+    max-height: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #324362;
+    color: white;
+    width: 100%;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+.history-strip-title {
+    grid-row: 1;
+    font-size: 5vw;
+    font-family: "Averia Libre", system-ui;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.history-strip-content {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.history-strip-content p {
+    padding: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 2vw;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    color: #B4E18B;
+    align-self: center;
+}
+
+.history-strip-content img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+    align-self: center;
+}
+
+#adventure-strip {
+    background-color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.adventure-strip-title {
+    font-size: 2.5rem;
+    font-family: "Averia Libre", system-ui;
+    font-weight: 700;
+    color: #B4E18B;
+    margin-bottom: 20px;
+}
+
+.adventure-strip-content {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.adventure-strip-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.copyright-info {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    background-color: #324362;
+    color: white;
+}
+
+.copyright-info {
+    grid-column: 2;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.sociallinks {
+    grid-column: 3;
+    text-align: right;
+    padding-right: 30%;
 }
 
 .sociallinks img {
     width: 50px;
     height: auto;
-    margin: 0 0.5rem;
+    margin-left: 5%;
 }
