@@ -112,14 +112,14 @@ header img {
     display: grid;
     grid-template-rows: auto auto;
     row-gap: 20px;
-    max-height: 550px;
+    max-height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .hero-title {
     grid-row: 1;
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: "Averia Libre", system-ui;
     font-weight: 700;
     color: white;
@@ -156,7 +156,7 @@ header img {
 
 .hero-article p {
     padding: 10px;
-    font-size: 2vw;
+    font-size: 1.4vw;
     font-family: "Crimson Text", serif;
     font-weight: 400;
     color: #B4E18B;
@@ -167,7 +167,7 @@ header img {
     display: grid;
     grid-template-rows: auto auto;
     row-gap: 5px;
-    max-height: 450px;
+    max-height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #324362;
@@ -179,7 +179,7 @@ header img {
 
 .history-strip-title {
     grid-row: 1;
-    font-size: 5vw;
+    font-size: 3vw;
     font-family: "Averia Libre", system-ui;
     color: white;
     text-align: center;
@@ -198,7 +198,7 @@ header img {
     padding: 5px;
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 2vw;
+    font-size: 1.4vw;
     font-family: "Crimson Text", serif;
     font-weight: 400;
     color: #B4E18B;
@@ -215,15 +215,15 @@ header img {
 
 #adventure-strip {
     background-color: white;
-    padding: 30px 15px;
+    padding: 0px 15px 20px 15px;
     text-align: center;
 }
 
 .adventure-strip-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: "Averia Libre", system-ui;
     font-weight: 700;
-    color: #B4E18B;
+    color: #324362;
     margin-bottom: 20px;
 }
 
