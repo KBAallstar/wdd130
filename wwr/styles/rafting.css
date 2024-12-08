@@ -328,7 +328,7 @@ footer .sociallinks img {
     margin-bottom: 15px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input {
     width: 100%;
     padding: 10px;
     border: 1px solid #000000;
@@ -341,6 +341,11 @@ footer .sociallinks img {
 }
 
 .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 1.3vw;
     height: 100px;
 }
 
