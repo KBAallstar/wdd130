@@ -322,7 +322,7 @@ footer .sociallinks img {
     margin-bottom: 20px;
 }
 
-.contact-form .input-row {
+.contact-form #input-row {
     display: flex;
     gap: 20px;
     margin-bottom: 15px;
@@ -336,7 +336,7 @@ footer .sociallinks img {
     font-size: 1.3vw;
 }
 
-.contact-form .input-row input {
+.contact-form #input-row input {
     flex: 1;
 }
 
@@ -344,7 +344,7 @@ footer .sociallinks img {
     height: 100px;
 }
 
-.contact-form .radio-group {
+.contact-form #radio-group {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -354,25 +354,25 @@ footer .sociallinks img {
     gap: 20px;
 }
 
-.contact-form .radio-group label {
+.contact-form #radio-group radio {
     display: flex;
     align-items: center;
     font-size: 1.3vw;
     color: #000000;
 }
 
-.contact-form .radio-group input[type="radio"] {
+.contact-form #radio-group input[type="radio"] {
     margin-right: 10px;
 }
 
-.contact-form .checkbox-group {
+.contact-form #checkbox-group {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-bottom: 15px;
 }
 
-.contact-form .checkbox-group label {
+.contact-form #checkbox-group checkbox {
     display: flex;
     align-items: center;
     font-size: 1.4vw;
@@ -380,7 +380,7 @@ footer .sociallinks img {
     justify-content: center;
 }
 
-.contact-form .checkbox-group input[type="checkbox"] {
+.contact-form #checkbox-group input[type="checkbox"] {
     margin-left: 10px;
 }
 

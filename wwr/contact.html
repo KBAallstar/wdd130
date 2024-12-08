@@ -46,19 +46,19 @@
             <div class="contact-form">
                 <h1>Contact Us</h1>
                 <p>Please fill out the form below to get in touch with us.</p>
-                <div class="input-row">
+                <form id="input-row">
                     <input type="text" name="name" placeholder="Name">
                     <input type="email" name="email" placeholder="Email">
-                </div>
-                <div class="radio-group">
-                    <label><input type="radio" name="inquiry-type" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="inquiry-type" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="inquiry-type" value="suggestion"> Website Suggestion</label>
-                </div>
+                </form>
+                <form id="radio-group">
+                    <radio><input type="radio" name="inquiry-type" value="general" required> General Inquiry</radio>
+                    <radio><input type="radio" name="inquiry-type" value="reservation"> Reservation Question</radio>
+                    <radio><input type="radio" name="inquiry-type" value="suggestion"> Website Suggestion</radio>
+                </form>
                 <textarea name="message" placeholder="Message"></textarea>
-                <div class="checkbox-group">
-                    <label>Subscribe to newsletter <input type="checkbox" name="subscribe"></label>
-                </div>
+                <form id="checkbox-group">
+                    <checkbox>Subscribe to newsletter <input type="checkbox" name="subscribe"></checkbox>
+                </form>
                 <button type="submit">Submit</button>
             </div>
             <div class="map-strip">
