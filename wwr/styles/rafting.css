@@ -20,7 +20,7 @@
 
 /*
 COLOR PALETTE https://coolors.co/37541c-324362-b4e18b-96c1f0
-- primary-color: #37541C forest green
+- primary-color: #fffd9f pale yellow
 - Secondary-color: #324362 blue-grey
 - accent1-color: #B4E18B pale green
 - accent2-color: #96C1F0 pale light blue
@@ -35,17 +35,20 @@ COLOR PALETTE https://coolors.co/37541c-324362-b4e18b-96c1f0
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: "Averia Libre", system-ui;
-    color: #324362;
-    margin: 1rem 0;
+    color: #fffd9f;
+    text-align: center;
+    margin-bottom: .5vw;
 }
 
 p {
-    font-size: 1.2rem;
+    padding: 5px 5%;
+    font-size: 1.6vw;
     font-family: "Crimson Text", serif;
-    color: #B4E18B;
-    margin: 1rem 0;
+    color: #ffffff;
+    text-align: center;
+    align-self: center;
 }
 
 a { 
@@ -87,19 +90,17 @@ header img {
 }
 
 .header-navbar a:hover {
-    color: darkkhaki;
+    color: #B4E18B;
     font-weight: 700;
-    text-decoration: underline;
 }
 
 /* FOOTER */
 footer {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     background-color: #324362;
-    color: white;
-    height: 7vw;
+    height: auto;
 }
 
 footer .copyright-info {
@@ -112,20 +113,143 @@ footer .copyright-info {
 footer .sociallinks {
     grid-column: 3;
     text-align: right;
-    padding-right: 30%;
+    padding-right: 8vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 footer .sociallinks img {
-    width: 50px;
-    margin-left: 5%;
+    height: 6vw;
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: cover;
+    align-self: center;
+    margin-left: 1vw;
+}
+
+/* HOME */
+
+.home-hero-banner {
+    background-image: url('../images/homehero.jpg');
+    background-size: cover;
+    background-attachment: local;
+    background-position-y: center;
+    display: grid;
+    grid-template-rows: 10% 15% 75%;
+    row-gap: 20px;
+    padding: 50px 0;
+    height: 35vw;
+}
+
+.home-hero-title {
+    font-size: 2vw;
+    font-family: "Averia Libre", system-ui;
+    font-weight: 700;
+    color: #fffd9f;
+    padding-bottom: 3vw;
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    text-shadow: black 3px 3px;
+}
+
+.home-hero-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: black 2px 2px;
+}
+
+.home-hero-button {
+    background-color: #324362;
+    color: #fffd9f;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+    text-shadow: black 0px 0px;
+}
+
+.home-hero-button:hover {
+    background-color: #fffd9f;
+    color: #324362;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+}
+
+.home-adventure-strip-content {
+    display: flex;
+    padding: 7vw 5vw 4vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.home-adventure-strip-content img {
+    max-width: 500px;
+    max-height: 15vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-action-strip {
+    display: flex;
+    justify-content: center;
+    background-color: #324362;
+    width: 100%;
+    height: 35vw;
+    margin-bottom: 8vw;
+}
+
+.home-action-strip img{
+    width: 40%;
+    max-height: 70%;
+    object-fit: cover;
+    align-self: center;
+    margin-left: 10vw;
+}
+
+.home-action-article {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-left: -5vw;
+}
+
+.home-action-article a {
+    background-color: #fffd9f;
+    color: black;
+    max-width: 20vw;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+    align-self: center;
 }
 
 /* ABOUT US */
 .hero-banner {
-    position: relative;
     background-image: url('../images/hero.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: local;
+    background-position-y: center;
     display: grid;
     grid-template-rows: auto auto;
     row-gap: 20px;
@@ -136,7 +260,7 @@ footer .sociallinks img {
     font-size: 2vw;
     font-family: "Averia Libre", system-ui;
     font-weight: 700;
-    color: white;
+    color: #fffd9f;
     padding: 10px;
     width: 95%;
     text-align: center;
@@ -156,17 +280,11 @@ footer .sociallinks img {
 }
 
 .hero-article img {
-    width: 100%;
-    max-width: 300px;
+    width: 90%;
+    height: auto;
+    max-height: 80%;
+    max-width: 400px;
     object-fit: cover;
-    align-self: center;
-}
-
-.hero-article p {
-    padding: 10px;
-    font-size: 1.4vw;
-    font-family: "Crimson Text", serif;
-    color: #B4E18B;
     align-self: center;
 }
 
@@ -184,7 +302,7 @@ footer .sociallinks img {
 .history-strip-title {
     font-size: 3vw;
     font-family: "Averia Libre", system-ui;
-    color: white;
+    color: #fffd9f;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -196,16 +314,10 @@ footer .sociallinks img {
     align-items: center;
 }
 
-.history-strip-content p {
-    padding: 5px 5%;
-    font-size: 1.4vw;
-    font-family: "Crimson Text", serif;
-    color: #B4E18B;
-    align-self: center;
-}
-
 .history-strip-content img {
-    width: 100%;
+    height: 12vw;
+    max-height: 80%;
+    width: auto;
     max-width: 300px;
     object-fit: cover;
     align-self: center;
@@ -234,9 +346,212 @@ footer .sociallinks img {
 }
 
 .adventure-strip-content img {
-    width: 150px;
+    max-width: 150px;
+    max-height: 9vw;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* TRIPS */
+
+.trips-hero-banner {
+    background-image: url('../images/rafting05.jpg');
+    background-size: cover;
+    background-attachment: local;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    height: 35vw;
+}
+
+.trips-hero-title {
+    font-size: 2vw;
+    font-family: "Averia Libre", system-ui;
+    font-weight: 700;
+    color: #fffd9f;
+    margin-top: 3vw;
+    padding-top: 6vw;
+    padding-bottom: 3vw;
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    text-shadow: black 3px 3px;
+}
+
+.trips-hero-title p {
+    justify-content: center;
+    align-items: center;
+    text-shadow: black 2px 2px;
+    margin-top: 2vw;
+    margin-bottom: 2.4vw;
+}
+
+.trips-hero-button {
+    background-color: #324362;
+    color: #fffd9f;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+    text-shadow: black 0px 0px;
+}
+
+.trips-hero-button:hover {
+    background-color: #fffd9f;
+    color: #324362;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+}
+
+#trips-adventure-strip {
+    background-color: white;
+    padding: 0 15px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.trips-strip-content {
+    background-color: white;
+    width: 100%;
+}
+
+.trips-strip-content h2 {
+    font-size: 2.5vw;
+    font-family: "Averia Libre", system-ui;
+    color: #324362;
+    text-align: center;
+    margin-top: 3vw;
+}
+
+.trips-strip-content p {
+    font-size: 1.6vw;
+    font-family: "Crimson Text", serif;
+    color: black;
+    text-align: center;
+    margin-top: 1vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.trips-adventure-strip-content {
+    display: flex;
+    padding: 3vw 5vw 3vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.trips-adventure-strip-content img {
+    max-width: 300px;
+    max-height: 10vw;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.trips-action-strip {
+    display: flex;
+    justify-content: center;
+    background-color: #324362;
+    width: 100%;
+    height: 35vw;
+    margin-bottom: 8vw;
+}
+
+.trips-action-strip img{
+    width: 40%;
+    max-height: 70%;
+    object-fit: cover;
+    align-self: center;
+    margin-left: 10vw;
+}
+
+.trips-action-article {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-left: -5vw;
+}
+
+.trips-action-article a {
+    background-color: #fffd9f;
+    color: black;
+    max-width: 20vw;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+    align-self: center;
+}
+
+.trips-contact-strip {
+    background-color: #324362;
+    width: 100%;
+    height: 20vw;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+}
+
+.trips-contact-strip-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    width:50vw;
+}
+
+.trips-contact-button {
+    background-color: #fffd9f;
+    color: #324362;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
+    text-shadow: black 0px 0px;
+    justify-self: center;
+    align-self: center;
+    width: 15vw;
+}
+
+.trips-contact-button:hover {
+    background-color: white;
+    color: #324362;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
+    cursor: pointer;
 }
 
 /* CONTACT US */
@@ -246,7 +561,6 @@ footer .sociallinks img {
     row-gap: 5px;
     padding: 10px 0;
     background-color: #324362;
-    color: white;
     width: 100%;
     margin: 1rem auto;
 }
@@ -254,23 +568,15 @@ footer .sociallinks img {
 .contact-strip-title {
     font-size: 3vw;
     font-family: "Averia Libre", system-ui;
-    color: white;
+    color: #fffd9f;
     text-align: center;
     margin-bottom: .5vw;
-}
-
-.contact-strip-info p {
-    font-size: 1.4vw;
-    font-family: "Crimson Text", serif;
-    color: #B4E18B;
-    text-align: center;
-    align-self: center;
 }
 
 .contact-strip-info h2 {
     font-size: 3vw;
     font-family: "Averia Libre", system-ui;
-    color: white;
+    color: #fffd9f;
     text-align: center;
     padding-bottom: .5vw;
 }
@@ -311,13 +617,14 @@ footer .sociallinks img {
 }
 
 .contact-form h1 {
-    font-size: 2vw;
-    margin-bottom: 10px;
+    font-size: 2.5vw;
+    font-family: "Averia Libre", system-ui;
     color: #000000;
 }
 
 .contact-form p {
     font-size: 1.5vw;
+    font-family: "Crimson Text", serif;
     color: #000000;
     margin-bottom: 20px;
 }
@@ -395,12 +702,15 @@ footer .sociallinks img {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    font-size: 1.4vw;
+    font-size: 1.65vw;
+    font-family: "Crimson Text", serif;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #324362;
+    color: #000000;
+    font-family: "Crimson Text", serif;
+    background-color: #B4E18B;
 }
 
 .map-strip {
@@ -417,17 +727,9 @@ footer .sociallinks img {
 .map-left-box h2 {
     font-size: 2.5vw;
     font-family: "Averia Libre", system-ui;
-    color: white;
+    color: #fffd9f;
     text-align: center;
     padding: 10px;
-    margin: 1rem 0;
-}
-
-.map-left-box p {
-    font-size: 1.4vw;
-    font-family: "Crimson Text", serif;
-    color: #B4E18B;
-    text-align: center;
     margin: 1rem 0;
 }
 
